@@ -3,7 +3,7 @@ import { UserContext } from "./contexts/user";
 
 import { USER } from "../../constants";
 
-export const ContextApp = () => {
+export const ContextConsumerApp = () => {
   return (
     <UserContext.Provider value={USER}>
       <Page />
