@@ -1,8 +1,13 @@
 import { Layout } from "../layout";
 import { Avatar } from "../avatar";
+import {NavigationBar} from '../navigation-bar';
 
 export const Page = ({ user }) => {
-  const userAvatar = <Avatar user={user} size={user.avatarSize} />;
+  const headerSlot = (
+    <NavigationBar>
+      <Avatar user={user} size={user.avatarSize} />
+    </NavigationBar>
+  );
 
-  return <Layout userAvatarSlot={userAvatar} />;
+  return <Layout headerSlot={headerSlot} />;
 };

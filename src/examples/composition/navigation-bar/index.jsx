@@ -1,3 +1,3 @@
-export const NavigationBar = ({ userAvatarSlot }) => {
-  return <>{userAvatarSlot}</>;
+export const NavigationBar = ({ children }) => {
+  return <>{children}</>;
 };
